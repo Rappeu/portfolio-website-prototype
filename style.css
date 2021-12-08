@@ -30,6 +30,8 @@ body {
     scroll-snap-align: start;
 } 
 
+/* Hero Section Start */
+
 #heroSect {
     display: grid;
     grid-template: 100px 1fr 100px / 2fr 1fr;
@@ -264,3 +266,91 @@ body {
         margin-bottom: 10px;
     }
 }
+
+/* Hero Section end */
+
+
+/* Who I am Section start */
+
+#aboutSect {
+    display: grid;
+    grid-template: "a a a" 100px
+                   "b b b" 1fr
+                   "c c c" 100px;
+}
+
+#aboutTitleContainer {
+    margin-top: 100px;
+    grid-area: a; 
+    display: grid;
+    place-content: center;
+}
+
+#aboutTitle {
+    font-size: 5rem;
+}
+
+#aboutContentContainer {
+    grid-area: b; 
+    display: grid;
+    place-content: center;
+}
+
+#aboutContent {
+    font-size: 2.5rem;
+    max-width: 50ch;
+    margin: 0 75px;
+}
+
+#aboutNextSect {
+    grid-area: c; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem; 
+}
+#aboutNextSect h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+    #aboutTitleContainer {
+        margin-top: 75px;
+    }
+    
+    #aboutTitle {
+        font-size: 3.5rem;
+    }
+
+    #aboutContent {
+        font-size: 1.3rem;
+        margin: 0 75px;
+    }
+
+    #aboutNextSect {
+        font-size: 1rem; 
+    }
+}
+@media screen and (max-height: 650px) {
+    #aboutTitleContainer {
+        margin-top: 20px;
+    }
+    
+    #aboutTitle {
+        font-size: 3.5rem;
+    }
+
+    #aboutContent {
+        font-size: 1.3rem;
+        margin: 0 75px;
+    }
+
+    #aboutNextSect {
+        font-size: 1rem; 
+    }
+}
+/* Who I am Section end */
