@@ -359,7 +359,7 @@ body {
 
 #projectSect {
     display: grid;
-    grid-template:1fr 100px / 1fr;
+    grid-template:1fr / 1fr;
 }
 
 #projects {
@@ -377,7 +377,6 @@ body {
     width: 90%;
     max-width: 1200px;
     height: 45%;
-    
     border-radius: 10px;
     display: grid;
     grid-template: "a b" 100% / 1fr 1fr;
@@ -445,6 +444,7 @@ body {
     gap: 20%;
     position: absolute;
     bottom: 0;
+    margin-top: 20px;
 }
 
 .projectTechContainer {
